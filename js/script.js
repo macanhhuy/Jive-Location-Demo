@@ -114,7 +114,7 @@
                 // Does this user have connections?
                 if (response.data && response.data.length > 0) { 				
                     
-                    // Append the current user to the list of connections. 
+                    // Append the current user to the list of connections so they appear at the top of the list. 
                     // The user's location information is set in the user preferences for the app. See the app.xml for details.
                     user.profile = {};
                     var prefs = new _IG_Prefs();
@@ -139,7 +139,7 @@
                         response.data[ii].profile.locale = locale;
                     }
 
-                    // The user's connections have been reviewed, now merge them into the template. 
+                    // The list of connections have been reviewed, now merge them into the template. 
                     var template = $("#peopleListTemplate").html();
                     var html = Mustache.to_html(template, response);
                     $peopleContainer.html(html);
@@ -247,6 +247,19 @@
 		
         if (Util.isHome || Util.isCanvas) {  // BEGIN HOME & CANVAS LOAD TASKS
 		
+	        // Using data pipelining to retrieve list of locations from an external source.
+            // Details here: http://opensocial-resources.googlecode.com/svn/spec/0.9/OpenSocial-Data-Pipelining.xml#rfc.section.11            
+            gadgets.util.registerOnLoadHandler(function() {
+				osDataContext = opensocial.data.getDataContext();	
+				osDataContext.registerListener('locationPool', function(key) {
+					var locations = (osDataContext.getDataSet(key[0])).content.locations;
+					Util.locationPool = locations;
+					
+					// Now that we have a list of 'dummy' locations, we can load the user's connections. 
+					peopleSearchHandler();
+			    });
+			});
+            
             // Attach an event handler to each person
             $peopleContainer.on("click", ".person", function() {
                 locationSearchHandler($(".locale", this).html());
@@ -295,6 +308,7 @@
                 
                 
                 /*	
+                // Optionally, the user's status can also be updated. 
                 // Update the user's status                
                 osapi.jive.core.updates.create(
                         { userId: '@viewer', update: { html: html, latitude: loc.latitude, longitude: loc.longitude } }
@@ -310,13 +324,14 @@
 	
             });
 		
+		
             if (Util.isHome) {
 	            // Attach an event handler to scroll back to people list
 	            $locContainer.on("click", "#back", function() {
 	                toggleView('people');
 	            });
 				
-	            // Attach event handler to load all (first 5) locations
+	            // Attach event handler to load all (first 5) connection's locations. 
 	            $peopleContainer.on("click", "#viewAll", function() {
 	                var localeList = "";
 	                $peopleContainer.children('.person:lt(5)').each(function () { 
@@ -328,18 +343,6 @@
 	            });
             }
             
-            // Using data pipelining to retrieve list of locations from an external source.
-            // Details here: http://opensocial-resources.googlecode.com/svn/spec/0.9/OpenSocial-Data-Pipelining.xml#rfc.section.11            
-            gadgets.util.registerOnLoadHandler(function() {
-				osDataContext = opensocial.data.getDataContext();	
-				osDataContext.registerListener('locationPool', function(key) {
-					var locations = (osDataContext.getDataSet(key[0])).content.locations;
-					Util.locationPool = locations;
-					
-					// Now that we have a list of 'dummy' locations, we can load the user's connections. 
-					peopleSearchHandler();
-			    });
-			});
 		
         // END HOME & CANVAS LOAD TASKS
         } else if (Util.isEmbedded) {  // BEGIN EMBEDDED LOAD TASKS
