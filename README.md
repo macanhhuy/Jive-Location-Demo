@@ -4,6 +4,8 @@
 The Location Demo app demonstrates many of the core concepts neccessary for most Jive applications. The app retrieves the list of the user's connections from the Jive platform, then retrieves details about each connection's location (time/weather). 
 The Location app provides examples of retrieving content from the platform (user's connections), retrieving content from an external RESTful API (location details), posting an update to the activity stream or update the user's status, and instantiating the app using App Mention. 
 
+Key features of the Jive framework which are implemented in this app are outlined below. 
+
 ### Retrieving user's connections
 * peopleSearchHandler()
 
@@ -59,4 +61,12 @@ http://handlebarsjs.com/
 
 
 ## Learn More
-[Links to useful Jive apps documentation here.]
+Integrating App Mentions (!App) into a Jive app
+* https://developers.jivesoftware.com/community/docs/DOC-1628
+* https://developers.jivesoftware.com/community/docs/DOC-1744
+* https://developers.jivesoftware.com/community/docs/DOC-1743
+
+Data Pipelining
+* http://opensocial-resources.googlecode.com/svn/spec/trunk/Core-Gadget.xml#DataPipelining
+* http://opensocial-resources.googlecode.com/svn/spec/trunk/Core-Gadget.xml#DataPipelining-ProxiedContent
+
