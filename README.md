@@ -1,10 +1,10 @@
 # Jive Location Demo
 
 ## About this Application
-The Location Demo app demonstrates many of the core concepts neccessary for most Jive applications. The app retrieves the list of the user's connections from the Jive platform, then retrieves details about each connection's location (time/weather). 
+The Location Demo app demonstrates many of the core concepts available for most Jive applications. The app retrieves the list of the user's connections from the Jive platform, then retrieves details about each connection's location (time/weather). 
 The Location app provides examples of retrieving content from the platform (user's connections), retrieving content from an external RESTful API (location details), posting an update to the activity stream or update the user's status, and instantiating the app using App Mention. 
 
-Key features of the Jive framework which are implemented in this app are outlined below. 
+Key features of the Jive framework implemented by this app are outlined below. 
 
 ### Retrieving user's connections
 * peopleSearchHandler()
@@ -61,6 +61,16 @@ http://handlebarsjs.com/
 
 
 ## Learn More
+Get Involved in the Jive Developer Community
+* https://community.jivesoftware.com/community/developer/
+* https://community.jivesoftware.com/community/developer/api
+
+The 'Hello World' Example
+* https://developers.jivesoftware.com/community/docs/DOC-1115
+
+Using the Dev Console
+* https://developers.jivesoftware.com/community/docs/DOC-1513
+
 Integrating App Mentions (!App) into a Jive app
 * https://developers.jivesoftware.com/community/docs/DOC-1628
 * https://developers.jivesoftware.com/community/docs/DOC-1744
@@ -70,3 +80,6 @@ Data Pipelining
 * http://opensocial-resources.googlecode.com/svn/spec/trunk/Core-Gadget.xml#DataPipelining
 * http://opensocial-resources.googlecode.com/svn/spec/trunk/Core-Gadget.xml#DataPipelining-ProxiedContent
 
+Accessing data via Jive Connects API
+* https://developers.jivesoftware.com/community/docs/DOC-1118
+* https://developers.jivesoftware.com/community/docs/DOC-1094

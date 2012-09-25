@@ -162,7 +162,7 @@
         if (moment.duration(timespanMS, 'ms').minutes() >= 15) {
             locationSearchHandler(lastQuery);  // It's been awhile, refresh all the data. 
         } else {	
-            // Loop through the locations, set the offset time
+            // Loop through the locations, update the offset time
             for (var ii in locData.locations) {
                 $('#locDate_' + locData.locations[ii].id).html(Util.getOffsetDisplayDate(locData.locations[ii].timeZone.offsetMS, displayDateFormat));
                 $('#locTime_' + locData.locations[ii].id).html(Util.getOffsetDisplayDate(locData.locations[ii].timeZone.offsetMS, displayTimeFormat));
