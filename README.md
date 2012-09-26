@@ -69,16 +69,13 @@ The following features should be considered for your RESTful services.
 ## Third-Party Libraries
 A few additional libraries, beyond jQuery, were used in this app. 
 
-### MomentJS
+### [MomentJS](http://momentjs.com/)
 A lightweight library for parsing and manipulating date objects. Useful in this app when applying timezone offsets for each location. 
-http://momentjs.com/
 
-### Mustache
+### [Mustache](http://mustache.github.com/)
 A logic-less templating engine that combines JSON with a template to produce anything you like. Can be use on both the client and on the server. 
-http://mustache.github.com/
 
-If you like Mustache, but want the benefit of logic (if/then, for loops, etc) in your templates, check out HandlebarsJS.
-http://handlebarsjs.com/
+If you like Mustache, but want the benefit of logic (if/then, for loops, etc) in your templates, check out [HandlebarsJS](http://handlebarsjs.com/).
 
 
 ## Learn More
