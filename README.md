@@ -6,7 +6,7 @@ To load this app in your Jive environment, follow these steps:
 1. Clone this app.
 2. Host the app content on a public-facing web server. 
 3. Instantiate the [Dev Console](https://developers.jivesoftware.com/community/docs/DOC-1513) on your dashboard. 
-4. From the Dev Console, Click 'Add App', provide the URL to the app.xml from your public-facing web service, check 'Install this app on my dashboard', click 'Add'. 
+4. From the Dev Console, Click 'Add App', provide the URL to the app.xml from your public-facing web server, check 'Install this app on my dashboard', click 'Add'. 
 5. The app is now on your dashboard. Click 'Configure App' and grant the app permission to load on your dashboard. 
 6. Enjoy.
 
