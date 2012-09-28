@@ -83,6 +83,9 @@ Get Involved in the Jive Developer Community
 * https://community.jivesoftware.com/community/developer/
 * https://community.jivesoftware.com/community/developer/api
 
+
+# TO DO: Replace the links below with references to community.jivesoftware.com. 
+
 The 'Hello World' Example
 * https://developers.jivesoftware.com/community/docs/DOC-1115
 
