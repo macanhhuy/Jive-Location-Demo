@@ -81,26 +81,22 @@ If you like Mustache, but want the benefit of logic (if/then, for loops, etc) in
 ## Learn More
 Get Involved in the Jive Developer Community
 * https://community.jivesoftware.com/community/developer/
-* https://community.jivesoftware.com/community/developer/api
-
-
-# TO DO: Replace the links below with references to community.jivesoftware.com. 
 
 The 'Hello World' Example
-* https://developers.jivesoftware.com/community/docs/DOC-1115
+* https://community.jivesoftware.com/docs/DOC-67828
 
 Using the Dev Console
-* https://developers.jivesoftware.com/community/docs/DOC-1513
+* https://community.jivesoftware.com/docs/DOC-65860
 
 Integrating App Mentions (!App) into a Jive app
-* https://developers.jivesoftware.com/community/docs/DOC-1628
-* https://developers.jivesoftware.com/community/docs/DOC-1744
-* https://developers.jivesoftware.com/community/docs/DOC-1743
+* https://community.jivesoftware.com/docs/DOC-68013
+* https://community.jivesoftware.com/docs/DOC-66636
+* https://community.jivesoftware.com/docs/DOC-66635
 
 Data Pipelining
 * http://opensocial-resources.googlecode.com/svn/spec/trunk/Core-Gadget.xml#DataPipelining
 * http://opensocial-resources.googlecode.com/svn/spec/trunk/Core-Gadget.xml#DataPipelining-ProxiedContent
 
 Accessing data via Jive Connects API
-* https://developers.jivesoftware.com/community/docs/DOC-1118
-* https://developers.jivesoftware.com/community/docs/DOC-1094
+* https://community.jivesoftware.com/docs/DOC-65829
+* https://community.jivesoftware.com/docs/DOC-65892
