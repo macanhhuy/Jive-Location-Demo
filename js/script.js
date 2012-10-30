@@ -1,7 +1,7 @@
 (function() {
 	
     var Util = {},
-        locURL = "http://shoe.io/location/json",  // URL to retrieve location data.
+        locURL = "http://brianshoemaker.com/location/json",  // URL to retrieve location data.
         peopleData,  // Cache from last time people details were received. 
         locData,  // Cache from last time location details were received. 
         lastDataCheck,  // Date/Time of last time data was retrieved. 
