@@ -34,7 +34,7 @@
         // http://docs.opensocial.org/display/OSD/Osapi.http+%28v0.9%29#Osapi.http%28v0.9%29-osapi.http.get
 		// https://developers.jivesoftware.com/community/docs/DOC-1094
 		osapi.http.get({
-			href: locURL + '?q=' + location,
+			href: locURL + '?q=' + encodeURI(location),
 		    format: 'json'
 		}).execute(function(response) {
 		    locationSearchCallback(response.content);
