@@ -76,7 +76,7 @@
     // Handler once location data is retrieved. 
     function locationSearchCallback(data) {
 		// Save the data so it's available later. 
-	    locData = data; 
+	    locData = data.data; 
 		
 	    // Loop through the locations, set the offset date
 	    for (var ii in locData.locations) {
