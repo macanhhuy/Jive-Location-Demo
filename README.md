@@ -50,10 +50,10 @@ App Mention listener
 
 
 ## About the API
-The API that powers this application combines services from Yahoo Placefinder and Weather Underground. 
-Yahoo was selected over Google's API because Yahoo does not place restrictions on how the search results are used.
+The API that powers this application combines services from GeoNames and Weather Underground. 
+GeoNames was selected over Yahoo PlaceFinder and Google's API because GeoNames is free and does not place restrictions on how the search results are used.
 
-* [Yahoo Placefinder API](http://developer.yahoo.com/geo/placefinder/)
+* [GeoNames](http://www.geonames.org/)
 * [Weather Underground API](http://www.wunderground.com/weather/api/)
 
 The API uses the free service tier from Wunderground, which restricts the number of requests that can be performed per minute/hour/day. 
