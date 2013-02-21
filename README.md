@@ -52,6 +52,7 @@ App Mention listener
 ## About the API
 The API that powers this application combines services from GeoNames and Weather Underground. 
 GeoNames was selected over Yahoo PlaceFinder and Google's API because GeoNames is free and does not place restrictions on how the search results are used.
+The source code for the Node.js API that powers this demonstration is available [here](https://github.com/shoemaker/location-api). 
 
 * [GeoNames](http://www.geonames.org/)
 * [Weather Underground API](http://www.wunderground.com/weather/api/)
