@@ -23,7 +23,7 @@
                description="Demonstration app for Jive World 2012. Retrieves a list of the user's connections and merges location-specific details."
                author="Brian Shoemaker"
                author_affiliation="Brian Shoemaker, Thomson Reuters"
-               author_email="brianshoemaker@gmail.com">
+               author_email="brianshoemaker+dev@gmail.com">
 
     <!-- Commonly used features -->
     <Require feature="dynamic-height" />
